@@ -1,5 +1,5 @@
-import { Response } from 'express';
+import { Response } from "express";
 
 export const sendErrorResponse = (res: Response, status: number, message: string) => {
-  res.status(status).json({ error: message });
+    res.status(status).json({ error: message });
 };
